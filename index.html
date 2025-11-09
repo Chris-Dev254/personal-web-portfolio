@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Akuno | Web Developer Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <a href="mailto:akunochristopher22@gmail.com?subject=Portfolio%20Inquiry&body=Hello%20Chris,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch." class="contact-link">
+    <p>akunochristopher22@gmail.com</p>
+</a>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="dark-mode-toggle">
+        <button class="toggle-btn" id="darkModeToggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Chris Akuno</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1 class="display-4 fw-bold mb-4">Hi, I'm Chris Akuno</h1>
+                    <h2 class="h3 mb-4 typing-text">Full Stack Web Developer</h2>
+                    <p class="lead mb-4">I create responsive, user-friendly websites and applications with modern technologies and best practices.</p>
+                    <a href="#projects" class="btn btn-light btn-lg me-3">View My Work</a>
+                    <a href="#contact" class="btn btn-outline-light btn-lg">Contact Me</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="static/images/my-profile.jpg" alt="Profile" class="img-fluid rounded-circle profile-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">About Me</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h3 class="mb-4">My Journey</h3>
+                    <p class="mb-4">I'm a passionate web developer with experience creating digital solutions for businesses of all sizes. My journey began with a curiosity about how websites work, which evolved into a career building responsive, accessible, and performant web applications.</p>
+                    <p class="mb-4">I specialize in front-end development with React and Vue.js, but I'm also proficient in back-end technologies like Node.js and Python. I believe in writing clean, maintainable code and staying up-to-date with the latest industry trends.</p>
+                    <div class="row text-center mt-5">
+                        <div class="col-4">
+                            <div class="counter" data-target="50">0</div>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="col-4">
+                            <div class="counter" data-target="35">0</div>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="col-4">
+                            <div class="counter" data-target="5">0</div>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item mb-4">
+                            <h5>Junior Web Developer</h5>
+                            <p class="text-primary">Tech Solutions Inc. | 2025 - Present</p>
+                            <p>Lead development of client projects, mentor junior developers, and implement modern web technologies to improve performance and user experience.</p>
+                        </div>
+                        <div class="timeline-item mb-4">
+                            <h5>Web Developer</h5>
+                            <p class="text-primary">Digital Agency Co. |</p>
+                            <p>Developed responsive websites and web applications for various clients, collaborated with designers to implement pixel-perfect UI designs.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>Frontend Developer</h5>
+                            <p class="text-primary">Startup Ventures |</p>
+                            <p>Built user interfaces for products using React and Redux, optimized applications for maximum speed and scalability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title text-center">My Skills</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h3 class="mb-4">Technical Skills</h3>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <span>HTML/CSS</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <span>JavaScript</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <span>React</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between">
+                            <span>Node.js</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">Professional Skills</h3>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="skill-card text-center">
+                                <div class="skill-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <h5>Problem Solving</h5>
+                                <p>Analytical approach to identifying and solving complex technical challenges.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="skill-card text-center">
+                                <div class="skill-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <h5>Team Collaboration</h5>
+                                <p>Effective communication and collaboration in cross-functional teams.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="skill-card text-center">
+                                <div class="skill-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <h5>Project Management</h5>
+                                <p>Organized approach to managing projects from conception to delivery.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="skill-card text-center">
+                                <div class="skill-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <h5>Client Communication</h5>
+                                <p>Clear and effective communication with clients to understand their needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">My Projects</h2>
+            
+            <!-- Project Filter Buttons -->
+            <div class="project-filters text-center mb-5">
+                <button class="btn project-filter-btn active" data-filter="all">All</button>
+                <button class="btn project-filter-btn" data-filter="web">Web Development</button>
+                <button class="btn project-filter-btn" data-filter="mobile">Mobile Apps</button>
+                <button class="btn project-filter-btn" data-filter="design">UI/UX Design</button>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card" data-category="web">
+                        <div class="position-relative overflow-hidden">
+                            <img src="static/images/emobile -2.jpg" class="project-img w-100" alt="E-Commerce Platform">
+                            <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                <div class="text-center">
+                                    <button class="btn btn-primary me-2 project-details-btn">View Details</button>
+                                    <a href="#" class="btn btn-outline-primary">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5>E-Commerce Platform</h5>
+                            <p>Full-stack e-commerce solution with React, Node.js, and MongoDB.</p>
+                            <div class="d-flex flex-wrap">
+                                <span class="badge bg-primary me-2 mb-2">React</span>
+                                <span class="badge bg-primary me-2 mb-2">Node.js</span>
+                                <span class="badge bg-primary me-2 mb-2">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card" data-category="web">
+                        <div class="position-relative overflow-hidden">
+                            <img src="static/images/Appartment- image2.jpeg" class="project-img w-100" alt="Real Estate Management System">
+                            <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                <div class="text-center">
+                                    <button class="btn btn-primary me-2 project-details-btn">View Details</button>
+                                    <a href="#" class="btn btn-outline-primary">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5>Real Estate Management System</h5>
+                            <p>Property management application with booking and payment features.</p>
+                            <div class="d-flex flex-wrap">
+                                <span class="badge bg-primary me-2 mb-2">Python</span>
+                                <span class="badge bg-primary me-2 mb-2">React</span>
+                                <span class="badge bg-primary me-2 mb-2">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card" data-category="design">
+                        <div class="position-relative overflow-hidden">
+                            <img src="static/images/home -family.jpeg" class="project-img w-100" alt="Travel Blog">
+                            <div class="project-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                                <div class="text-center">
+                                    <button class="btn btn-primary me-2 project-details-btn">View Details</button>
+                                    <a href="#" class="btn btn-outline-primary">Live Demo</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5>Travel Blog</h5>
+                            <p>Responsive travel blog with custom CMS and interactive maps.</p>
+                            <div class="d-flex flex-wrap">
+                                <span class="badge bg-primary me-2 mb-2">WordPress</span>
+                                <span class="badge bg-primary me-2 mb-2">PHP</span>
+                                <span class="badge bg-primary me-2 mb-2">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section section-padding">
+        <div class="container">
+            <h2 class="section-title text-center">Education & Certifications</h2>
+            
+            <div class="education-timeline">
+                <!-- Education Item 1 -->
+                <div class="education-item fade-in">
+                    <div class="education-content">
+                        <span class="education-year">2022 - 2026</span>
+                        <h3 class="education-degree">Bachelor of Science in Information Technology</h3>
+                        <div class="education-institution">Murang'a University</div>
+                        <p class="education-details">Specialized in Web Technologies and Human-Computer Interaction. Completed coursework in Advanced Web Development, Database Systems, and Software Engineering.</p>
+                    </div>
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                </div>
+                
+                <!-- Education Item 2 -->
+                <div class="education-item fade-in">
+                    <div class="education-content">
+                        <span class="education-year">2022 - 2026</span>
+                        <h3 class="education-degree">Associate student in Web development program</h3>
+                        <div class="education-institution">eMobilis Mobile Technology Institute</div>
+                        <p class="education-details">Focused on foundational programming concepts;web programming and system administration.</p>
+                    </div>
+                    <div class="education-icon">
+                        <i class="fas fa-College"></i>
+                    </div>
+                </div>
+                
+                <!-- Education Item 3 -->
+                <div class="education-item fade-in">
+                    <div class="education-content">
+                        <span class="education-year">2025</span>
+                        <h3 class="education-degree">Full Stack Web Development Bootcamp</h3>
+                        <div class="education-institution">Emobilis Tech Education Institute</div>
+                        <p class="education-details">Intensive 2.5-month program covering modern web development technologies including React, Node.js, MongoDB, and deployment strategies.</p>
+                        <span class="education-gpa">Certificate of Excellence</span>
+                    </div>
+                    <div class="education-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="certifications">
+                <h3 class="text-center mb-5">Professional Certifications</h3>
+                <div class="certification-grid">
+                    <div class="certification-card fade-in">
+                        <div class="certification-icon">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <h4 class="certification-name">Networking Fundamentals</h4>
+                        <div class="certification-issuer">  MUT Web Services</div>
+                    </div>
+                    
+                    <div class="certification-card fade-in">
+                        <div class="certification-icon">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <h4 class="certification-name">Google Cloud Associate</h4>
+                        <div class="certification-issuer">Google Cloud</div>
+                        <div class="certification-date">Issued: 2021</div>
+                    </div>
+                    
+                    <div class="certification-card fade-in">
+                        <div class="certification-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h4 class="certification-name">React Developer Certification</h4>
+                        <div class="certification-issuer">Meta</div>
+                        <div class="certification-date">Issued: 2020</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact" class="section-bg-light">
+    <div class="container">
+        <h2 class="section-title text-center">Get In Touch</h2>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-4 text-center mb-4">
+                <div class="contact-info">
+                    <i class="fas fa-map-marker-alt fa-2x text-primary mb-3"></i>
+                    <h5>Location</h5>
+                    <a href="https://maps.google.com/?q=Nairobi,Kenya" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <p>Nairobi, Kenya</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="contact-info">
+                    <i class="fas fa-phone fa-2x text-primary mb-3"></i>
+                    <h5>Phone</h5>
+                    <a href="tel:+254791340834" class="contact-link">
+                        <p>+254 791 340 834</p>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mb-4">
+                <div class="contact-info">
+                    <i class="fas fa-envelope fa-2x text-primary mb-3"></i>
+                    <h5>Email</h5>
+                    <a href="mailto:akunochristopher22@gmail.com" class="contact-link">
+                        <p>akunochristopher22@gmail.com</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h3 class="mb-4">Chris Akuno</h3>
+                    <p>Full Stack Web Developer creating modern, responsive websites and applications.</p>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <h5 class="mb-4">Connect With Me</h5>
+                    <div class="social-links">
+                        <div class="social-links">
+                    <a href="https://github.com/chris-dev" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                     <a href="https://linkedin.com/in/christopher-akuno" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                     <a href="https://twitter.com/chrisakuno" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                     <a href="https://instagram.com/chrisakuno" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-light">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Chris Akuno. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p>Designed with <i class="fas fa-heart text-danger"></i> by Chris Akuno</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="portfolio.js"></script>
+</body>
+</html>
